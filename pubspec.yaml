@@ -68,5 +68,10 @@ flutter:
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
+  fonts:
+    - family: Iconfont
+      fonts:
+        - asset: assets/fonts/iconfont.ttf
+          weight: 700
   # For details regarding fonts from package dependencies,
   # see https://flutter.io/custom-fonts/#from-packages
