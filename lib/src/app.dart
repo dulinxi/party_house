@@ -8,7 +8,7 @@ class PartyHouse extends StatelessWidget {
       primarySwatch: Colors.blue,
     );
   }
-
+  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -56,7 +56,7 @@ class PartyHouse extends StatelessWidget {
                     children: <Widget>[
                       Text('Events'),
                     ],
-                  ),
+                  ), 
                   Padding(
                     padding: EdgeInsets.all(20.0),
                     child: Row(
