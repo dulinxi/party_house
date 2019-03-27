@@ -7,7 +7,6 @@ you can clone this project to local. and run command ```flutter run``` to run th
 
 there is the screenshot of the UI picture.
 ==
-<img src="/Home.jpg" width="320">
-![UI](/Home.jpg)
-![UI](/Good-Financial.jpg)
-![UI](/Continue.jpg)
+<img src="/Home.jpg" width="320"/>
+<img src="/Good-Financial.jpg" width="320"/>
+<img src="/Continue.jpg" width="320"/>
