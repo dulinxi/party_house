@@ -16,7 +16,6 @@ class PartyHouse extends StatelessWidget {
       title: 'Party house',
       theme: ThemeData(
         primaryColor: Color.fromRGBO(33, 51, 160, 1),
-        accentColor: Colors.red,
         // appBarTheme: AppBarTheme(
         //   color: Colors.white,
         //   brightness: Brightness.light,
