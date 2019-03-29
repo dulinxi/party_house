@@ -6,9 +6,11 @@ Thanks for [Matt Delac](https://www.uplabs.com/matt "Matt Delac").
 you can clone this project to local. and run command ```flutter run``` to run the project. 
 
 <img src="/show.gif" width="320"/>
+
 ==
 there is the screenshot of the UI picture.
 ==
+
 ### home
 
 <img src="/Home.jpg" width="320"/>
