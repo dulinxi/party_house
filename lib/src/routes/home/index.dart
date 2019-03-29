@@ -42,8 +42,8 @@ class _HomePageState extends State<HomePage> {
                       borderRadius: BorderRadius.circular(50.0),
                     ),
                     child: ClipOval(
-                      child: Image.network(
-                        'http://b-ssl.duitang.com/uploads/item/201811/20/20181120204138_irzdb.jpg',
+                      child: Image.asset(
+                        'assets/images/avator.jpg',
                         width: 40,
                         height: 40,
                       ),

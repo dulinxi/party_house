@@ -5,6 +5,9 @@ Thanks for [Matt Delac](https://www.uplabs.com/matt "Matt Delac").
 ## Getting Started
 you can clone this project to local. and run command ```flutter run``` to run the project. 
 
+<video id="video" controls="" preload="none" poster="/Home.jpg">
+    <source id="mp4" src="/show.mp4" type="video/mp4">
+</video>
 there is the screenshot of the UI picture.
 ==
 ### home
