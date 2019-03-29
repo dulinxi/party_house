@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-import './routes/home.dart';
+import 'routes/home/index.dart';
 
 class PartyHouse extends StatelessWidget {
   // build App theme
-  ThemeData _buildThemeData() {
-    return ThemeData(
-      primarySwatch: Colors.red,
-    );
-  }
+  // ThemeData _buildThemeData() {
+  //   return ThemeData(
+  //     primarySwatch: Colors.red,
+  //   );
+  // }
   
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class PartyHouse extends StatelessWidget {
         //   ),
         // ),
       ),
-      home: HomePage()
+      home: HomePage(),
     );
   }
 }
