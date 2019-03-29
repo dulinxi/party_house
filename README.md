@@ -8,7 +8,9 @@ you can clone this project to local. and run command ```flutter run``` to run th
 <img src="/show.gif" width="320"/>
 
 ==
+
 there is the screenshot of the UI picture.
+
 ==
 
 ### home
