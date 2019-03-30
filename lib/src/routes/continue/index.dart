@@ -16,7 +16,8 @@ class _ContinuePageState extends State<ContinuePage> {
         elevation: 0,
       ),
       backgroundColor: Color.fromRGBO(33, 51, 160, 1),
-      body: Container(
+      body: SingleChildScrollView(
+        child: Container(
         padding: EdgeInsets.all(20.0),
         child: Card(
             child: Container(
@@ -47,6 +48,10 @@ class _ContinuePageState extends State<ContinuePage> {
                 height: 20.0,
               ),
               Text('Send successfully to HaliBoTe'),
+              SizedBox(
+                height: 20.0,
+              ),
+              Text('\$100', style:TextStyle(color: Colors.green, fontSize: 20.0)),
               ListTile(
                 leading: GestureDetector(
                   child: Container(
@@ -107,6 +112,7 @@ class _ContinuePageState extends State<ContinuePage> {
           ),
         )),
       ),
+      )
     );
   }
 }
