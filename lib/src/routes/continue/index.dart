@@ -93,7 +93,7 @@ class _ContinuePageState extends State<ContinuePage> {
               SizedBox(
                 height: 30.0,
               ),
-              FlatButton(
+              FlatButton( 
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20.0)),
                 color: Color.fromRGBO(236, 42, 96, 1),
