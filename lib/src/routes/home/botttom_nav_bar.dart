@@ -184,11 +184,14 @@ class _MyBottomBarState extends State<MyBottomBar> {
                         SizedBox(
                           height: 10.0,
                         ),
-                        Text('Request',
-                            style: TextStyle(
-                                color: _index == 3
-                                    ? activeColor
-                                    : Color.fromRGBO(0, 0, 0, 1)))
+                        Text(
+                          'Request',
+                          style: TextStyle(
+                            color: _index == 3
+                                ? activeColor
+                                : Color.fromRGBO(0, 0, 0, 1),
+                          ),
+                        ),
                       ],
                     ),
                   ),

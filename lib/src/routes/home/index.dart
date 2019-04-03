@@ -11,12 +11,18 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  
+  final GlobalKey<ScaffoldState> _scaffordtKey = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     final _stateBarHeight = MediaQuery.of(context).padding.top;
     // final _screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
+      key: _scaffordtKey,
       backgroundColor: Colors.white,
+      drawer: Drawer(
+        child: Text('侧边栏'),
+      ),
       body: Column(
         children: <Widget>[
           Container(
@@ -58,10 +64,12 @@ class _HomePageState extends State<HomePage> {
                     'james2@.com',
                     style: TextStyle(color: Colors.white),
                   ),
-                  trailing: Icon(
-                    Icons.notifications,
+                  trailing: IconButton(
+                    icon: Icon(Icons.notifications),
                     color: Colors.white,
-                    size: 20.0,
+                    onPressed: (){
+                      _scaffordtKey.currentState.openDrawer();
+                    },
                   ),
                 ),
                 SizedBox(

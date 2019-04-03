@@ -32,19 +32,6 @@ class _FinancialPageState extends State<FinancialPage> {
             color: Color.fromRGBO(33, 51, 160, 1),
             child: Column(
               children: <Widget>[
-                // SizedBox(
-                //   height: _stateBarHeight,
-                // ),
-                // ListTile(
-                //   leading: BackButton(
-                //     color: Colors.white,
-                //   ),
-                //   trailing: Icon(
-                //     Icons.notifications,
-                //     color: Colors.white,
-                //     size: 16.0,
-                //   ),
-                // ),
                 Padding(
                   padding: EdgeInsets.fromLTRB(16.0, 0, 16.0, 0),
                   child: Column(
@@ -223,13 +210,18 @@ class _FinancialPageState extends State<FinancialPage> {
                         Expanded(
                           child: GestureDetector(
                             onTap: (){
-                              Navigator.of(context).push(MaterialPageRoute(
-                                builder: (BuildContext context){
-                                  return ContinuePage();
+                              Navigator.push(context, PageRouteBuilder(
+                                pageBuilder: (BuildContext context, Animation animtion, Animation secondaryAnimation) {
+                                  return FadeTransition(
+                                    opacity: animtion,
+                                    child: ContinuePage()
+                                  );
                                 }
                               ));
                             },
-                            child: Container(
+                            child: Hero(
+                              tag: 'miniBox',
+                              child: Container(
                               margin: EdgeInsets.only(left: 8.0, right: 8.0),
                               child: AspectRatio(
                                 child: Container(
@@ -282,13 +274,14 @@ class _FinancialPageState extends State<FinancialPage> {
                                       ),
                                       Text(
                                         '\$80.50',
-                                        style: TextStyle(fontSize: 16.0),
+                                        style: TextStyle(fontSize: 16.0, color: Colors.black),
                                       ),
                                     ],
                                   ),
                                 ),
                                 aspectRatio: 1,
                               ),
+                            ),
                             ),
                           ),
                         ),
